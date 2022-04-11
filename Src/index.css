@@ -1,0 +1,17 @@
+@import url(https://fonts.googleapis.com/css?family=Roboto:300,400,500,700);
+
+body{
+    font-family: 'Roboto', sans-serif;
+    font-size: 14px;
+    color: #666;
+    background: #fff;
+}
+.alinhar{
+    text-align: center;
+    color: dodgerblue;
+    font-family:Cambria;
+    font-size: 48px;
+}
+li{
+    text-transform: uppercase; 
+}
