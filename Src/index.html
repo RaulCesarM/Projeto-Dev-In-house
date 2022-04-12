@@ -4,6 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta http-equiv="Accept-CH" content="Viewport-Width, Width" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Alfa Social Store</title>
     <link rel="stylesheet" type="text/css" href="/Src/index.css">
@@ -33,7 +34,7 @@
 
                     <li class="nav-item">
                         <a class="nav-link">
-                            <button click="carregarProdutos()" class="btn btn-outline-info" type="button"
+                            <button onclick="carregarProdutos()" class="btn btn-outline-info" type="button"
                                 data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight"
                                 aria-controls="offcanvasRight">Adicionar a Loja <svg xmlns="http://www.w3.org/2000/svg"
                                     width="16" height="16" fill="currentColor" class="bi bi-shop-window"
@@ -47,7 +48,7 @@
 
                     <li class="nav-item">
                         <a class="nav-link">
-                            <button click="carregarProdutos()" class="btn btn-outline-info" type="button"
+                            <button onclick="carregarProdutos()" class="btn btn-outline-info" type="button"
                                 data-bs-toggle="modal" data-bs-target="#exampleModalCenter">
                                 checkList <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
                                     fill="currentColor" class="bi bi-card-checklist" viewBox="0 0 16 16">
@@ -73,22 +74,19 @@
                             </button></a>
                     </li>
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+                    <li class="nav-item">
+                        <a class="nav-link">
+                            <button onclick="carregarProdutos()" class="btn btn-outline-info" type="button"
+                                data-bs-toggle="modal" data-bs-target="#ModalCenter">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                                    class="bi bi-person-circle" viewBox="0 0 16 16">
+                                    <path
+                                        d="M13.468 12.37C12.758 11.226 11.195 10 8 10s-4.757 1.225-5.468 2.37A6.987 6.987 0 0 0 8 15a6.987 6.987 0 0 0 5.468-2.63z" />
+                                    <path fill-rule="evenodd" d="M8 9a3 3 0 1 0 0-6 3 3 0 0 0 0 6z" />
+                                    <path fill-rule="evenodd"
+                                        d="M8 1a7 7 0 1 0 0 14A7 7 0 0 0 8 1zM0 8a8 8 0 1 1 16 0A8 8 0 0 1 0 8z" />
+                                </svg>
+                            </button></a>
 
 
 
@@ -292,25 +290,19 @@
                     <h3>Adicionar Produtos na Loja</h3>
                     <form>
                         <div class="input-group input-group-sm mb-3">
-                            <div class="input-group-prepend">
-                                <span class="input-group-text" id="inputGroup-sizing-sm">Produto.</span>
-                            </div>
-                            <input id="Listar1" type="text" class="form-control" aria-label="Small"
-                                aria-describedby="inputGroup-sizing-sm">
+
+                            <input id="Listar1" placeholder="Produto" type="text" class="form-control"
+                                aria-label="Small" aria-describedby="inputGroup-sizing-sm">
                         </div>
 
                         <div class="input-group input-group-sm mb-3">
-                            <div class="input-group-prepend">
-                                <span class="input-group-text" id="inputGroup-sizing-sm">Tamanho.</span>
-                            </div>
-                            <input id="Listar2" type="text" class="form-control" aria-label="Small"
-                                aria-describedby="inputGroup-sizing-sm">
+
+                            <input id="Listar2" placeholder="Tamanho" type="text" class="form-control"
+                                aria-label="Small" aria-describedby="inputGroup-sizing-sm">
                         </div>
                         <div class="input-group input-group-sm mb-3">
-                            <div class="input-group-prepend">
-                                <span class="input-group-text" id="inputGroup-sizing-sm">Preço.</span>
-                            </div>
-                            <input id="Listar3" type="text" class="form-control" aria-label="Small"
+
+                            <input id="Listar3" placeholder="Preço" type="text" class="form-control" aria-label="Small"
                                 aria-describedby="inputGroup-sizing-sm">
                         </div>
 
@@ -318,9 +310,7 @@
                         <button type="submit" id="BTN_adicionar" class="btn btn-primary">Adicionar</button>
                         <button type="submit" id="BTN_listar" class="btn btn-primary">Listar</button>
 
-                        <h2 id="totalapagar">
-
-                        </h2>
+                        <h2 id="totalapagar"></h2>
 
 
 
@@ -332,93 +322,18 @@
                     <ul1>
                         <li1>
 
+
                         </li1>
                     </ul1>
 
                 </div>
-                
-
 
             </div>
         </div>
 
     </div>
 
-    <!-- Modal -->
-    <div class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog"
-        aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
-        <div class="modal-dialog modal-dialog-centered" role="document">
-            <div class="modal-content">
-                <div class="modal-header">
-                    <h5 class="modal-title" id="exampleModalCenterTitle">Lista de Produtos</h5>
-                    <button type="button" class="close" data-bs-dismiss="modal" aria-label="Close">
-                        <span aria-hidden="true">&times;</span>
-                    </button>
-                </div>
-                <div class="modal-body">
-
-                    <div id="Listar">
-
-                        <ul1>
-
-                        </ul1>
-                        <h2 class="soma"></h2>
-                    </div>
-                </div>
-                <div class="modal-footer">
-                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-                    <button type="button" class="btn btn-primary">Save changes</button>
-                </div>
-            </div>
-        </div>
-    </div>
-
-    <!-- Modal -->
-    <div class="modal fade" id="ModalCenter" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle"
-        aria-hidden="true">
-        <div class="modal-dialog modal-dialog-centered" role="document">
-            <div class="modal-content">
-                <div class="modal-header">
-                    <h5 class="modal-title" id="exampleModalCenterTitle">Lista de Produtos</h5>
-                    <button type="button" class="close" data-bs-dismiss="modal" aria-label="Close">
-                        <span aria-hidden="true">&times;</span>
-                    </button>
-                </div>
-                <div class="modal-body">
-                    <div id="Listar">
-
-                        <ul1>
-
-                        </ul1>
-                        <h2 class="soma"></h2>
-                    </div>
-                </div>
-                <div class="modal-footer">
-                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-                    <button type="button" class="btn btn-primary">Save changes</button>
-                </div>
-            </div>
-        </div>
-    </div>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+    
 
 
 
