@@ -3,6 +3,7 @@
 const Produto = document.querySelector("input#Listar1");
 const Tamanho = document.querySelector("input#Listar2");
 const Preco = document.querySelector("input#Listar3");
+
 const Botao_Adicionar = document.querySelector("#BTN_adicionar");
 const Botao_Listar = document.querySelector("#BTN_listar");
 const UL_lista = document.querySelector("ul1");
@@ -14,7 +15,7 @@ Botao_Adicionar.onclick = (evento) => {
 
   if (Produto.value) {
     salvarProduto();
-
+   
     Produto.value = "";
     Tamanho.value = "";
     Preco.value = "";
@@ -31,10 +32,12 @@ Botao_Listar.onclick = (evento) => {
 
 function salvarProduto() {
   var produto = {
+    Id :  Math.random() * 10000,
     nome: Produto.value,
     tamanho: Tamanho.value,
-    preco: Preco.value,
+    preco: Preco.value,    
   };
+ 
   var produtos = [];
   if (localStorage.getItem("produtos")) {
     produtos = JSON.parse(localStorage.getItem("produtos"));
@@ -75,10 +78,13 @@ function carregarProdutos() {
     LI_lista.appendChild(checkbox);
 
     let nomedefora = produto.nome;
+    let id_produto = produto.Id;
+    
 
     checkbox.onclick = () => {
       if (checkbox.checked) {
         LI_lista.style.textDecoration = "line-through";
+        
       } else {
         LI_lista.style.textDecoration = "none";
       }
@@ -89,7 +95,7 @@ function carregarProdutos() {
 
     Botao_excluir.onclick = () => {
       if (confirm("Deseja remover o produto?")) {
-        removerProdutopornome(nomedefora);
+        removerProdutoporid(id_produto);
         UL_lista.removeChild(LI_lista);
         exibirsoma();
         alert( "Produto "+ nomedefora + " removido com sucesso!");
@@ -107,13 +113,15 @@ function carregarProdutos() {
 
 
 
-function removerProdutopornome(nome) {
+function removerProdutoporid(id_produto) {
   var produtos = [];
   if (localStorage.getItem("produtos")) {
     produtos = JSON.parse(localStorage.getItem("produtos"));
   }
 
-  let prodtosfiltrados = produtos.filter((nomeProd) => nomeProd.nome !== nome);
+  let prodtosfiltrados = produtos.filter((produto) => {
+    return produto.Id != id_produto;
+  });
 
   localStorage.setItem("produtos", JSON.stringify(prodtosfiltrados));
   somarPrecos();
