@@ -49,8 +49,8 @@ body{
 .imageareaPerfil{
    width: 150px;
    height: 150px;
-    border-radius: 50% ;
-    margin-top: 50px;    
+   border-radius: 50% ;
+    margin-top: 10px;    
     margin-left: 50%;
     position: absolute;
 }

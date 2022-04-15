@@ -30,11 +30,10 @@
             <div class="collapse navbar-collapse" id="navbarTogglerDemo03">
                 <ul class="navbar-nav me-auto mb-2 mb-lg-0">
                     <li class="nav-item">
-                        <a class="nav-link"  href="/projeto/Src/Pages/index.html">
-                            <button  class="btn btn-outline-info" >          
-                                Vitrine <svg xmlns="http://www.w3.org/2000/svg"
-                                    width="16" height="16" fill="currentColor" class="bi bi-shop-window"
-                                    viewBox="0 0 16 16">
+                        <a class="nav-link" href="/projeto/Src/Pages/index.html">
+                            <button class="btn btn-outline-info">
+                                Vitrine <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                                    fill="currentColor" class="bi bi-shop-window" viewBox="0 0 16 16">
                                     <path
                                         d="M2.97 1.35A1 1 0 0 1 3.73 1h8.54a1 1 0 0 1 .76.35l2.609 3.044A1.5 1.5 0 0 1 16 5.37v.255a2.375 2.375 0 0 1-4.25 1.458A2.371 2.371 0 0 1 9.875 8 2.37 2.37 0 0 1 8 7.083 2.37 2.37 0 0 1 6.125 8a2.37 2.37 0 0 1-1.875-.917A2.375 2.375 0 0 1 0 5.625V5.37a1.5 1.5 0 0 1 .361-.976l2.61-3.045zm1.78 4.275a1.375 1.375 0 0 0 2.75 0 .5.5 0 0 1 1 0 1.375 1.375 0 0 0 2.75 0 .5.5 0 0 1 1 0 1.375 1.375 0 1 0 2.75 0V5.37a.5.5 0 0 0-.12-.325L12.27 2H3.73L1.12 5.045A.5.5 0 0 0 1 5.37v.255a1.375 1.375 0 0 0 2.75 0 .5.5 0 0 1 1 0zM1.5 8.5A.5.5 0 0 1 2 9v6h12V9a.5.5 0 0 1 1 0v6h.5a.5.5 0 0 1 0 1H.5a.5.5 0 0 1 0-1H1V9a.5.5 0 0 1 .5-.5zm2 .5a.5.5 0 0 1 .5.5V13h8V9.5a.5.5 0 0 1 1 0V13a1 1 0 0 1-1 1H4a1 1 0 0 1-1-1V9.5a.5.5 0 0 1 .5-.5z" />
                                 </svg>
@@ -45,42 +44,45 @@
 
 
                     <li class="nav-item">
-                        <a class="nav-link"  >
-                            <button  onclick="carregarProdutos()" class="btn btn-outline-info" type="button"
-                                data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight"
-                                aria-controls="offcanvasRight">
-                                Lista de Desejos <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-list-check" viewBox="0 0 16 16">
-                                    <path fill-rule="evenodd" d="M5 11.5a.5.5 0 0 1 .5-.5h9a.5.5 0 0 1 0 1h-9a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h9a.5.5 0 0 1 0 1h-9a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h9a.5.5 0 0 1 0 1h-9a.5.5 0 0 1-.5-.5zM3.854 2.146a.5.5 0 0 1 0 .708l-1.5 1.5a.5.5 0 0 1-.708 0l-.5-.5a.5.5 0 1 1 .708-.708L2 3.293l1.146-1.147a.5.5 0 0 1 .708 0zm0 4a.5.5 0 0 1 0 .708l-1.5 1.5a.5.5 0 0 1-.708 0l-.5-.5a.5.5 0 1 1 .708-.708L2 7.293l1.146-1.147a.5.5 0 0 1 .708 0zm0 4a.5.5 0 0 1 0 .708l-1.5 1.5a.5.5 0 0 1-.708 0l-.5-.5a.5.5 0 0 1 .708-.708l.146.147 1.146-1.147a.5.5 0 0 1 .708 0z"/>
-                                  </svg>
+                        <a class="nav-link">
+                            <button onclick="Carregar_Na_tela()" class="btn btn-outline-info" type="button"
+                            data-bs-toggle="modal" data-bs-target="#exampleModal"
+                               >
+                                Lista de Desejos <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                                    fill="currentColor" class="bi bi-list-check" viewBox="0 0 16 16">
+                                    <path fill-rule="evenodd"
+                                        d="M5 11.5a.5.5 0 0 1 .5-.5h9a.5.5 0 0 1 0 1h-9a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h9a.5.5 0 0 1 0 1h-9a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h9a.5.5 0 0 1 0 1h-9a.5.5 0 0 1-.5-.5zM3.854 2.146a.5.5 0 0 1 0 .708l-1.5 1.5a.5.5 0 0 1-.708 0l-.5-.5a.5.5 0 1 1 .708-.708L2 3.293l1.146-1.147a.5.5 0 0 1 .708 0zm0 4a.5.5 0 0 1 0 .708l-1.5 1.5a.5.5 0 0 1-.708 0l-.5-.5a.5.5 0 1 1 .708-.708L2 7.293l1.146-1.147a.5.5 0 0 1 .708 0zm0 4a.5.5 0 0 1 0 .708l-1.5 1.5a.5.5 0 0 1-.708 0l-.5-.5a.5.5 0 0 1 .708-.708l.146.147 1.146-1.147a.5.5 0 0 1 .708 0z" />
+                                </svg>
                             </button>
                         </a>
                     </li>
 
-                   
-                   
 
 
-                  
+
+
+
 
 
                 </ul>
                 <a class="nav-link" href="/projeto/Src/Pages/Users.html">
-                    <button  class="btn btn-outline-info"  type="button" data-bs-toggle="modal"
-                        ><small1 > </small>
-                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
-                            class="bi bi-person-circle" viewBox="0 0 16 16">
-                            <path
-                                d="M13.468 12.37C12.758 11.226 11.195 10 8 10s-4.757 1.225-5.468 2.37A6.987 6.987 0 0 0 8 15a6.987 6.987 0 0 0 5.468-2.63z" />
-                            <path fill-rule="evenodd" d="M8 9a3 3 0 1 0 0-6 3 3 0 0 0 0 6z" />
-                            <path fill-rule="evenodd"
-                                d="M8 1a7 7 0 1 0 0 14A7 7 0 0 0 8 1zM0 8a8 8 0 1 1 16 0A8 8 0 0 1 0 8z" />
-                        </svg>
+                    <button class="btn btn-outline-info" type="button" data-bs-toggle="modal">
+                        <small1> </small>
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                                class="bi bi-person-circle" viewBox="0 0 16 16">
+                                <path
+                                    d="M13.468 12.37C12.758 11.226 11.195 10 8 10s-4.757 1.225-5.468 2.37A6.987 6.987 0 0 0 8 15a6.987 6.987 0 0 0 5.468-2.63z" />
+                                <path fill-rule="evenodd" d="M8 9a3 3 0 1 0 0-6 3 3 0 0 0 0 6z" />
+                                <path fill-rule="evenodd"
+                                    d="M8 1a7 7 0 1 0 0 14A7 7 0 0 0 8 1zM0 8a8 8 0 1 1 16 0A8 8 0 0 1 0 8z" />
+                            </svg>
                     </button>
                 </a>
 
 
                 <a class="navbar-brand" href="#">
-                    <img src="/projeto/Assets/images/Brand.PNG" class="card-img-top" alt="Brand" width="50px" height="50px">
+                    <img src="/projeto/Assets/images/Brand.PNG" class="card-img-top" alt="Brand" width="50px"
+                        height="50px">
                 </a>
 
             </div>
@@ -97,7 +99,8 @@
         <div class="row">
             <div class="col-12 col-sm-6 col-md-4 col-lg-3">
                 <div class="card col pb-1 py-md-2 border bg-light" style="width: 18rem;">
-                    <img src="/projeto/Assets/images/Veneza.PNG" width="200px" height="350px" class="card-img-top" alt="Veneza">
+                    <img src="/projeto/Assets/images/Veneza.PNG" width="200px" height="350px" class="card-img-top"
+                        alt="Veneza">
                     <div class="card-body">
                         <h5 class="card-title">Calça social</h5>
                         <p class="card-text"> Veneza Luxo Masculino Cinza</p>
@@ -124,23 +127,27 @@
                             </label>
 
                         </form>
-                       
 
-                        <button id="BTN_adicionar1" class="btn btn-primary">Adicionar a lista de desejos <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-plus-circle" viewBox="0 0 16 16">
-                            <path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z"/>
-                            <path d="M8 4a.5.5 0 0 1 .5.5v3h3a.5.5 0 0 1 0 1h-3v3a.5.5 0 0 1-1 0v-3h-3a.5.5 0 0 1 0-1h3v-3A.5.5 0 0 1 8 4z"/>
-                          </svg> 
+
+                        <button id="BTN_adicionar1" class="btn btn-primary">Adicionar a lista de desejos <svg
+                                xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                                class="bi bi-plus-circle" viewBox="0 0 16 16">
+                                <path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z" />
+                                <path
+                                    d="M8 4a.5.5 0 0 1 .5.5v3h3a.5.5 0 0 1 0 1h-3v3a.5.5 0 0 1-1 0v-3h-3a.5.5 0 0 1 0-1h3v-3A.5.5 0 0 1 8 4z" />
+                            </svg>
                         </button>
 
-                        
-                   
+
+
                     </div>
-                  
+
                 </div>
             </div>
             <div class="col-12 col-sm-6 col-md-4 col-lg-3">
                 <div class="card col pb-1 py-md-2 border bg-light " style="width: 18rem;">
-                    <img src="/projeto/Assets/images/Slim.PNG" width="200px" height="350px" class="card-img-top" alt="Veneza">
+                    <img src="/projeto/Assets/images/Slim.PNG" width="200px" height="350px" class="card-img-top"
+                        alt="Veneza">
                     <div class="card-body">
                         <h5 class="card-title">Camisa social</h5>
                         <p class="card-text"> Camisa jeans Slim</p>
@@ -166,11 +173,14 @@
 
                         </form>
                         <form>
-                          
-                            <button id="BTN_adicionar2" type="submit" class="btn btn-primary">Adicionar a lista de desejos <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-plus-circle" viewBox="0 0 16 16">
-                                <path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z"/>
-                                <path d="M8 4a.5.5 0 0 1 .5.5v3h3a.5.5 0 0 1 0 1h-3v3a.5.5 0 0 1-1 0v-3h-3a.5.5 0 0 1 0-1h3v-3A.5.5 0 0 1 8 4z"/>
-                              </svg> 
+
+                            <button id="BTN_adicionar2" type="submit" class="btn btn-primary">Adicionar a lista de
+                                desejos <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                                    fill="currentColor" class="bi bi-plus-circle" viewBox="0 0 16 16">
+                                    <path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z" />
+                                    <path
+                                        d="M8 4a.5.5 0 0 1 .5.5v3h3a.5.5 0 0 1 0 1h-3v3a.5.5 0 0 1-1 0v-3h-3a.5.5 0 0 1 0-1h3v-3A.5.5 0 0 1 8 4z" />
+                                </svg>
                             </button>
                         </form>
                     </div>
@@ -204,11 +214,14 @@
                             </label>
                         </form>
                         <form>
-                            
-                            <button id="BTN_adicionar3" type="submit" class="btn btn-primary">Adicionar a lista de desejos <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-plus-circle" viewBox="0 0 16 16">
-                                <path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z"/>
-                                <path d="M8 4a.5.5 0 0 1 .5.5v3h3a.5.5 0 0 1 0 1h-3v3a.5.5 0 0 1-1 0v-3h-3a.5.5 0 0 1 0-1h3v-3A.5.5 0 0 1 8 4z"/>
-                              </svg> 
+
+                            <button id="BTN_adicionar3" type="submit" class="btn btn-primary">Adicionar a lista de
+                                desejos <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                                    fill="currentColor" class="bi bi-plus-circle" viewBox="0 0 16 16">
+                                    <path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z" />
+                                    <path
+                                        d="M8 4a.5.5 0 0 1 .5.5v3h3a.5.5 0 0 1 0 1h-3v3a.5.5 0 0 1-1 0v-3h-3a.5.5 0 0 1 0-1h3v-3A.5.5 0 0 1 8 4z" />
+                                </svg>
                             </button>
                         </form>
                     </div>
@@ -216,7 +229,8 @@
             </div>
             <div class="col-12 col-sm-6 col-md-4 col-lg-3">
                 <div class="card col pb-1 py-md-2 border bg-light" style="width: 18rem;">
-                    <img src="/projeto/Assets/images/terno.PNG" width="200px" height="350px" class="card-img-top" alt="Veneza">
+                    <img src="/projeto/Assets/images/terno.PNG" width="200px" height="350px" class="card-img-top"
+                        alt="Veneza">
                     <div class="card-body">
                         <h5 class="card-title">Terno Microfibra</h5>
                         <p class="card-text"> Terno Microfibra Secret Business</p>
@@ -241,11 +255,14 @@
                             </label>
                         </form>
                         <form>
-                            
-                            <button id="BTN_adicionar4" type="submit" class="btn btn-primary">Adicionar a lista de desejos <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-plus-circle" viewBox="0 0 16 16">
-                                <path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z"/>
-                                <path d="M8 4a.5.5 0 0 1 .5.5v3h3a.5.5 0 0 1 0 1h-3v3a.5.5 0 0 1-1 0v-3h-3a.5.5 0 0 1 0-1h3v-3A.5.5 0 0 1 8 4z"/>
-                              </svg> 
+
+                            <button id="BTN_adicionar4" type="submit" class="btn btn-primary">Adicionar a lista de
+                                desejos <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                                    fill="currentColor" class="bi bi-plus-circle" viewBox="0 0 16 16">
+                                    <path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z" />
+                                    <path
+                                        d="M8 4a.5.5 0 0 1 .5.5v3h3a.5.5 0 0 1 0 1h-3v3a.5.5 0 0 1-1 0v-3h-3a.5.5 0 0 1 0-1h3v-3A.5.5 0 0 1 8 4z" />
+                                </svg>
                             </button>
                         </form>
                     </div>
@@ -253,6 +270,68 @@
             </div>
         </div>
     </div>
+
+
+    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title" id="exampleModalLabel">Sua Lista de Desejos</h5>
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <div class="container">
+                    <div class="form">
+                       
+                        <h6>Adicionar, Remover e conferir itens</h6>
+                        <form>
+                            <div class="input-group input-group-sm mb-3">
+    
+                                <input id="Listar1" placeholder="Produto" type="text" class="form-control">
+                            </div>
+    
+                            <div class="input-group input-group-sm mb-3">
+    
+                                <input id="Listar2" placeholder="Tamanho" type="text" class="form-control">
+                            </div>
+                            <div class="input-group input-group-sm mb-3">
+    
+                                <input id="Listar3" placeholder="Preço" type="text" class="form-control" aria-label="Small">
+                            </div>
+                            <button type="submit" id="BTN_adicionar" class="btn btn-primary">Adicionar</button>
+    
+                            <h2 id="totalapagar"></h2>
+                        </form>
+                    </div>
+                    <div id="Listar">
+    
+                        <ul1>
+                            <li1>
+                            </li1>
+                        </ul1>
+    
+                    </div>
+            </div>
+           
+          </div>
+        </div>
+      </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- 
     <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasRight" aria-labelledby="offcanvasRightLabel">
         <div class="offcanvas-header">
             <h5 id="offcanvasRightLabel"></h5>
@@ -262,25 +341,22 @@
             <div class="container">
                 <div class="form">
                     <h5>Sua Lista de Desejos </h5>
-                    <h6>Adicionar, Remover e conferir itens</h6>                   
+                    <h6>Adicionar, Remover e conferir itens</h6>
                     <form>
                         <div class="input-group input-group-sm mb-3">
 
-                            <input id="Listar1" placeholder="Produto" type="text" class="form-control"
-                                >
+                            <input id="Listar1" placeholder="Produto" type="text" class="form-control">
                         </div>
 
                         <div class="input-group input-group-sm mb-3">
 
-                            <input id="Listar2" placeholder="Tamanho" type="text" class="form-control"
-                                >
+                            <input id="Listar2" placeholder="Tamanho" type="text" class="form-control">
                         </div>
                         <div class="input-group input-group-sm mb-3">
 
-                            <input id="Listar3" placeholder="Preço" type="text" class="form-control" aria-label="Small"
-                               >
+                            <input id="Listar3" placeholder="Preço" type="text" class="form-control" aria-label="Small">
                         </div>
-                        <button type="submit" id="BTN_adicionar" class="btn btn-primary">Adicionar</button>                   
+                        <button type="submit" id="BTN_adicionar" class="btn btn-primary">Adicionar</button>
 
                         <h2 id="totalapagar"></h2>
                     </form>
@@ -297,22 +373,23 @@
             </div>
         </div>
 
-    </div>
+    </div> -->
 
 
-    
-    
 
-   
+
+
+
 
 
 
 
 </body>
-
 <script src="/projeto/Src/JS/index.js"></script>
 <script src="/projeto/Src/JS/vitrine.js"></script>
 <script src="/projeto/Src/JS/Users.js"></script>
+
+
 
 
 <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js"
