@@ -40,8 +40,17 @@ p{
 
 
 body{
-    background-image:url(/projeto/Assets/images/user.jpg) ;
+    background-color: #f2f2f2;
     background-repeat: no-repeat;
-    background-position: right;
-    background-size: 50%; 
+    background-position: right top;
+   
+    
+}
+.imageareaPerfil{
+   width: 150px;
+   height: 150px;
+    border-radius: 50% ;
+    margin-top: 50px;    
+    margin-left: 50%;
+    position: absolute;
 }

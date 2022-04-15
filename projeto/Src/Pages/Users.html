@@ -7,6 +7,8 @@
     <meta http-equiv="Accept-CH" content="Viewport-Width, Width" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Alfa Social Store</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+
     <link rel="stylesheet" type="text/css" href="/projeto/Src/CSS/User.css">
     <link rel="icon" type="image/x-icon" href="/projeto/Assets/icons/favicon.ico">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
@@ -76,13 +78,33 @@
     </div>
 
     <h1 class="alinhar">ALFA SOCIAL STORE</h1>
+   
 
 
     <!------------------------------------------------------------------------------------------------>
-    <div class="container">
-
+   
+   
+   
+    
+    <div class="container">        
+       
         <form class="needs-validation" novalidate>
-            <div class="form-row">
+            
+            <div class="form-row-">
+                <div class="input-group mb-3">
+                    
+                    
+                  </div>
+                <div>
+                   
+                   
+                   
+                    
+                    <a class="imagearea" ></a>
+                     
+                
+                   
+               
                 <div class="col-md-4 mb-3">
 
                     <input type="text" class="form-control" id="validationCustom01" placeholder="Nome" value=""
@@ -101,12 +123,11 @@
 
                 <div class="col-md-4 mb-3">
 
-                    <div class="input-group">
+                  
 
-                        <input type="text" class="form-control" id="validationCustom03" placeholder="Usuário"
-                            aria-describedby="inputGroupPrepend" required>
+                        <input type="text" class="form-control" id="validationCustom03" placeholder="Usuário" required>
 
-                    </div>
+                   
                 </div>
             </div>
 
@@ -134,7 +155,24 @@
                     <div class="invalid-feedback">
                         Por favor, informe um CEP válido.
                     </div>
+                    
                 </div>
+
+                <div class="col-md-3 mb-3">
+
+                    
+                <div class="custom-file">
+                    <input class="classhere" type="file" name="logo" id="logo" />
+                  
+                   
+                  </div>
+
+                    
+                </div>
+
+
+
+
             </div>
             <div class="form-group">
                 <div class="form-check">
@@ -151,28 +189,7 @@
         </form>
 
 
-        <!--------------------SCRIPT ORIGINAL DO PROPRIO BOOTSTRAP/ NÃO TEM ALTERÇÃO -------------------------->
-
-        <script>
-            // Exemplo de JavaScript inicial para desativar envios de formulário, se houver campos inválidos.
-            (function () {
-                'use strict';
-                window.addEventListener('load', function () {
-                    // Pega todos os formulários que nós queremos aplicar estilos de validação Bootstrap personalizados.
-                    var forms = document.getElementsByClassName('needs-validation');
-                    // Faz um loop neles e evita o envio
-                    var validation = Array.prototype.filter.call(forms, function (form) {
-                        form.addEventListener('submit', function (event) {
-                            if (form.checkValidity() === false) {
-                                event.preventDefault();
-                                event.stopPropagation();
-                            }
-                            form.classList.add('was-validated');
-                        }, false);
-                    });
-                }, false);
-            })();
-        </script>
+      
 
         <!----------------------------------------------------------------------------------------------->
 
