@@ -20,6 +20,7 @@ Botao_Adicionar_prod1.addEventListener("click", function (evento) {
   const Preco = "89,90";
 
   var produto = {
+    Check: false,
     ID: ID,
     nome: Produto,
     tamanho: Tamanho,
@@ -46,6 +47,7 @@ Botao_Adicionar_prod2.addEventListener("click", function (evento) {
   const Preco = "80,99";
 
   var produto = {
+    Check: false,
     ID: ID,
     nome: Produto,
     tamanho: Tamanho,
@@ -72,6 +74,7 @@ Botao_Adicionar_prod3.addEventListener("click", function (evento) {
   const Preco = "145,70";
 
   var produto = {
+    Check: false,
     ID: ID,
     nome: Produto,
     tamanho: Tamanho,
@@ -95,9 +98,10 @@ Botao_Adicionar_prod4.addEventListener("click", function (evento) {
   const ID = Math.random() * 10000;
   const Tamanho = form4.fb4.value;
   const Produto = "Terno Secret Business";
-  const Preco = "5000,90";
+  const Preco = "890,90";
 
   var produto = {
+    Check: false,
     ID: ID,
     nome: Produto,
     tamanho: Tamanho,
