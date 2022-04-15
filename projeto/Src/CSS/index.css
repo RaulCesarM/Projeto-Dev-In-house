@@ -22,7 +22,7 @@ li{
 }
 
 button {
-    background-color:transparent; /* Green */
+    background-color:transparent; 
     border: none;
     color:transparent;
     padding: 2px 2px;
@@ -39,10 +39,12 @@ p{
     padding-top: 0px;
     padding-bottom: 0px;
 }
-checkbox{
+#checkart{
     font-size: 15px;
     font-family: 'Roboto', sans-serif;
-    color: #666;
+    color: rgb(12, 88, 240);
     padding-top: 0px;
     padding-bottom: 0px;
+    size: 125px;
 }
+

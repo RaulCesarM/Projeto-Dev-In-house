@@ -8,6 +8,7 @@ var form2 = document.querySelector("#sizes2");
 var form3 = document.querySelector("#sizes3");
 var form4 = document.querySelector("#sizes4");
 
+
 //SUMULA UM LISTA DE CARDS DO TIPO PRODUTO
 
 Botao_Adicionar_prod1.addEventListener("click", function (evento) {

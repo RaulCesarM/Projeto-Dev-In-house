@@ -23,10 +23,10 @@ Botao_Adicionar.onclick = (evento) => {
 };
 
 
-Botao_Listar.onclick = (evento) => {
-  evento.preventDefault();
-  carregarProdutos();
-};
+// Botao_Listar.onclick = (evento) => {
+//   evento.preventDefault();
+//   carregarProdutos();
+// };
 
 
 
@@ -78,7 +78,9 @@ function carregarProdutos() {
     LI_lista.appendChild(checkbox);
 
     let nomedefora = produto.nome;
-    let id_produto = produto.Id;
+    let id_produto = produto.ID;
+    console.log(id_produto);
+    console.log(nomedefora);
     
 
     checkbox.onclick = () => {
@@ -95,7 +97,7 @@ function carregarProdutos() {
 
     Botao_excluir.onclick = () => {
       if (confirm("Deseja remover o produto?")) {
-        removerProdutoporid(id_produto);
+        removerProdutoporid(produto.ID);
         UL_lista.removeChild(LI_lista);
         exibirsoma();
         alert( "Produto "+ nomedefora + " removido com sucesso!");
@@ -119,11 +121,13 @@ function removerProdutoporid(id_produto) {
     produtos = JSON.parse(localStorage.getItem("produtos"));
   }
 
-  let prodtosfiltrados = produtos.filter((produto) => {
-    return produto.Id != id_produto;
-  });
+  
 
-  localStorage.setItem("produtos", JSON.stringify(prodtosfiltrados));
+  let produtosfiltrados = produtos.filter((produto) => {
+    return produto.ID != id_produto;
+  });
+  
+  localStorage.setItem("produtos", JSON.stringify(produtosfiltrados));
   somarPrecos();
 }
 

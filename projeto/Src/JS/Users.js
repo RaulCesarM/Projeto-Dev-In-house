@@ -8,6 +8,9 @@ const Estado = document.querySelector("input#validationCustom05");
 const CEP = document.querySelector("input#validationCustom06");
 const Mostrar_NomeUsuario = document.querySelector("small1");
 
+const smalll = document.createElement("small");
+  const valor = document.createElement("span");
+
 const imagem_de_perfil = document.querySelector("input#inputGroupFile01");
 
 
@@ -57,6 +60,9 @@ const Botao_Adicionar_Usuario = document.querySelector(
 
 Botao_Adicionar_Usuario.onclick = (evento) => {
   evento.preventDefault();
+
+
+  
   
   salvarUsuario();
 
@@ -69,6 +75,9 @@ Botao_Adicionar_Usuario.onclick = (evento) => {
 
   
 };
+
+
+
 
 function salvarUsuario() {
   if(Nome.value =="" || Sobrenome.value =="" || Apelido.value =="" || Cidade.value =="" || Estado.value =="" || CEP.value ==""){
@@ -99,28 +108,21 @@ function salvarUsuario() {
 
 function carregarUsuario() {
   var Usuarios = [];
-  const smalll = document.createElement("small");
-  const valor = document.createElement("span");
-
-
-
+  
   if (localStorage.getItem("Usuarios")) {
     Usuarios = JSON.parse(localStorage.getItem("Usuarios"));
   }
   
   
   if(Usuarios.length == 0){
-    valor.innerHTML = "Usuario ";
-
-   
+    valor.innerHTML = "Usuario ";   
     smalll.appendChild(valor);
 
     Mostrar_NomeUsuario.appendChild(smalll);
   }else{
     valor.innerHTML = Usuarios.Nome;
     smalll.appendChild(valor);
-    Mostrar_NomeUsuario.appendChild(smalll);
-  }
+    Mostrar_NomeUsuario.appendChild(smalll); }
 
  
  
