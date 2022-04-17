@@ -1,11 +1,11 @@
 <h2> Projeto Dev in House </h2>
 
-<h3> Trata-se de uma simulção de uma loja virtual e suas funções, onde as ações do usuario podem ficar salva em em localStorage </h3>
+<h3> Trata-se da simulção de uma loja virtual e suas funções, onde as ações do usuario podem ficar salva  em localStorage </h3>
 <br>
 
 <img src="https://user-images.githubusercontent.com/37316110/163732564-42a75d78-a186-4c65-83e9-242d6d6081dc.png" width="900"/> 
 <P> inicialmente trata-se de uma loja comum </p>
-<p> mas o usuario não pode faser adição de produtos em sua lista de desejos sem estar cadastrado </p>
+<p> Para o usuario faser o uso da lista de desejos prescisa estar cadastrado </p>
 <img src="https://user-images.githubusercontent.com/37316110/163732657-83149edf-d051-44ce-a2c7-09f0e59e2047.png" width="600"/> 
 
  <p>apos  ter sido cadastrado o usuario tera sua foto de perfil disponibilizada e seu nome na navbar </p>
