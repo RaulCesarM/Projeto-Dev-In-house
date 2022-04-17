@@ -27,7 +27,7 @@
   e funcionaliadades como inserir de forma manual os itens desejados,<br>
   ou checkar os itens ja comprados, ou deletar os itens na qual não deseja mais comprar </p>
   <br>
- <h1> Check </h1>
+ <h1> Adição </h1>
 
  <img src="https://user-images.githubusercontent.com/37316110/163733871-88ec51ed-4bfb-4139-8712-82ddc53e0c04.png"/> 
  
