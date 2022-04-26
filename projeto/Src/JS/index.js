@@ -26,7 +26,7 @@ function Limpar_Campos_Produto() {
 function Preencher_Campos_Produto() {
   var produto = {
     Check: false,
-    Id: Math.random() * 10000,
+    ID: Math.random() * 10000,
     nome: Produto.value,
     tamanho: Tamanho.value,
     preco: Preco.value,
